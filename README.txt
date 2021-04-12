@@ -1,0 +1,1 @@
+Após subir o docker-compose, será necessário executar os scripts do arquivo sql_ini.sql.

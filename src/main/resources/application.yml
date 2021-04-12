@@ -1,0 +1,22 @@
+server:
+  error:
+    include_stacktrace: ON_PARAM
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/swplanet?schema=swplanet
+    username: root
+    password: root
+logging:
+  level:
+    org:
+      springframework:
+          r2dbc: DEBUG
+
+services:
+  swapi:
+    url: https://swapi.dev/api/
+    planets: planets/
+    search: ?search={name}
+    page: ?page={page}
+    maxPages: 10
