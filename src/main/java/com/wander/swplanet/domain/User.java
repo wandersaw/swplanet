@@ -2,7 +2,6 @@ package com.wander.swplanet.domain;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.springframework.data.annotation.Id;

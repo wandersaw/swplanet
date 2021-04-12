@@ -11,7 +11,6 @@ public class SwplanetApplication {
 	static {
 		BlockHound.install(builder -> 
 			builder
-				.allowBlockingCallsInside("java.util.UUID", "randomUUID")
 				.allowBlockingCallsInside("javax.net.ssl.SSLContext", "init"));
 	}
 

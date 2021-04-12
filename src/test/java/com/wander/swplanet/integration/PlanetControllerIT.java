@@ -51,7 +51,6 @@ public class PlanetControllerIT {
 	public static void blockHoundSetup() {
 		BlockHound.install(builder -> 
 		builder
-			.allowBlockingCallsInside("java.util.UUID", "randomUUID")
 			.allowBlockingCallsInside("javax.net.ssl.SSLContext", "init"));
 	}
 	
